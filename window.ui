@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <author>chahmatist</author>
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>432</width>
+    <height>431</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>sender telega </string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_4">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tab_help">
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="tabPosition">
+       <enum>QTabWidget::North</enum>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>сообщение</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="geometry">
+         <rect>
+          <x>3</x>
+          <y>10</y>
+          <width>401</width>
+          <height>351</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <widget class="QTextEdit" name="textEdit_message">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>40</y>
+           <width>391</width>
+           <height>231</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_message">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>10</y>
+           <width>91</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>сообщение</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="button_send_message">
+         <property name="geometry">
+          <rect>
+           <x>120</x>
+           <y>290</y>
+           <width>181</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>отправить сообщение</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <attribute name="title">
+        <string>настройки</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>10</y>
+          <width>401</width>
+          <height>351</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <widget class="QWidget" name="horizontalLayoutWidget_2">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>381</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QLabel" name="label_token">
+            <property name="text">
+             <string>токен:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_token">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="echoMode">
+             <enum>QLineEdit::Password</enum>
+            </property>
+            <property name="placeholderText">
+             <string>123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="horizontalLayoutWidget_3">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>70</y>
+           <width>381</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QLabel" name="label_chat_id">
+            <property name="text">
+             <string>канал ид</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_chat_id"/>
+          </item>
+          <item>
+           <widget class="QPushButton" name="button_get_chat_id">
+            <property name="text">
+             <string>получить ид канала</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QLabel" name="label_signed">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>120</y>
+           <width>151</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>подпись для канала</string>
+         </property>
+        </widget>
+        <widget class="QPlainTextEdit" name="plainTextEdit_signed">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>140</y>
+           <width>381</width>
+           <height>201</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>помощь</string>
+       </attribute>
+       <widget class="QTextEdit" name="textEdit">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>371</width>
+          <height>331</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+        <property name="html">
+         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%; background-color:transparent;&quot;&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000;&quot;&gt;Откройте мессенджер Telegram, войдите в вашу учетную запись или создайте новую.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%; background-color:transparent;&quot;&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000;&quot;&gt;1) Создайте Telegram-бота с помощью BotFather&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%; background-color:transparent;&quot;&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000;&quot;&gt;&lt;br /&gt;Введите в поле поиска &lt;/span&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; font-style:italic; color:#000000;&quot;&gt;@BotFather&lt;/span&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000;&quot;&gt; и выберите бота.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%; background-color:transparent;&quot;&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000;&quot;&gt;Нажмите «Запустить» для активации бота BotFather. В ответ вы получите список команд по управлению ботов.&lt;br /&gt;&lt;br /&gt;Выберите или напечатайте и отправьте команду /newbot.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%; background-color:transparent;&quot;&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000;&quot;&gt;Дайте имя боту — клиенты увидят это имя при общении с ботом. И никнейм бота — по нему можно будет найти бота в Telegram. Никнейм должен быть уникальным, не повторять существующие в базе и заканчиваться на слово «bot». Дайте имя боту — клиенты увидят это имя при общении с ботом. И никнейм бота — по нему можно будет найти бота в Telegram. Никнейм должен быть уникальным, не повторять существующие в базе и заканчиваться на слово «bot».&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%; background-color:transparent;&quot;&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000;&quot;&gt;Будет сгенерирован токен для вашего вновь созданного Telegram-бота - он понадобится нам позже.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%; background-color:transparent;&quot;&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000;&quot;&gt;Токен выглядит примерно так: 123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%; background-color:transparent;&quot;&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%; background-color:transparent;&quot;&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000;&quot;&gt;Копируем токен и вставляем в поле «настройки» - «токен»&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; font-weight:700; color:#000000;&quot;&gt;Примечание: пожалуйста, не сообщайте никому свой токен бота Telegram - любой человек с вашим токеном может получить контроль над вашим ботом Telegram.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%; background-color:transparent;&quot;&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%; background-color:transparent;&quot;&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000;&quot;&gt;2) Создайте чат, содержащий вашего бота&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%; background-color:transparent;&quot;&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000;&quot;&gt;Каналы в Телеграме бывают двух видов:&lt;/span&gt;&lt;/p&gt;
+&lt;ol style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000; background-color:transparent;&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-size:medium;&quot;&gt;Приватный. Характеризуется лимитированным доступом. Недоступен при поиске. Для вступления подписчику нужно получить ссылку от владельца (администратора). Удобное решение для создания внутрикорпоративных сообществ для информирования сотрудников. В личных целях его можно применять, чтобы писать заметки, шпаргалки. При необходимости приватный канал можно сделать общедоступным. &lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000; background-color:transparent;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-size:medium;&quot;&gt;Публичный. Доступ к нему есть у всех желающих. Просматривать записи могут даже те пользователи, которые еще не стали подписчиками. Публичный канал доступен в поиске и имеет собственный короткий адрес (ссылку).&lt;/span&gt; &lt;/li&gt;&lt;/ol&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%; background-color:transparent;&quot;&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000;&quot;&gt;И несколько правил, которые важно учесть перед созданием:&lt;/span&gt;&lt;/p&gt;
+&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000; background-color:transparent;&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-size:medium;&quot;&gt;длина логина — 5-32 символа; &lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000; background-color:transparent;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-size:medium;&quot;&gt;длина названия и bio (описания) — 255 символов; &lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000; background-color:transparent;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-size:medium;&quot;&gt;предельное количество публичных каналов на один аккаунт — 10; &lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000; background-color:transparent;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-size:medium;&quot;&gt;количество подписчиков — без ограничений; &lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000; background-color:transparent;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-size:medium;&quot;&gt;количество подписчиков, видимое владельцу — 200; &lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000; background-color:transparent;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-size:medium;&quot;&gt;можно привлечь администраторов — до 50; &lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000; background-color:transparent;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-size:medium;&quot;&gt;можно подключить ботов — до 20; &lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000; background-color:transparent;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-size:medium;&quot;&gt;право на редактирование контента — до 2-х суток с момента публикации; &lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000; background-color:transparent;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-size:medium;&quot;&gt;удаление канала с количеством подписчиков от 1 тыс. — только через техподдержку мессенджера.&lt;/span&gt; &lt;/li&gt;&lt;/ul&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%; background-color:transparent;&quot;&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000;&quot;&gt;Создать канал в Телеграмме можно через десктопное приложение, программы для Android и iOS:&lt;/span&gt;&lt;/p&gt;
+&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000; background-color:transparent;&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-size:medium;&quot;&gt;десктоп: нажать в левом углу вверху экрана на три черточки, и в открывшемся меню выбрать «Создать канал»; &lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000; background-color:transparent;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-size:medium;&quot;&gt;Android: открыть список чатов, нажать на три черточки и выбрать «Новый канал»; &lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000; background-color:transparent;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-size:medium;&quot;&gt;iOS: во вкладке «Чаты» нажать на иконку нового сообщения в правом углу вверху и выбрать «Новый канал».&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%; background-color:transparent;&quot;&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000;&quot;&gt;Создание и настройку Telegram-канала на десктопном приложении. Вызываем меню:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%; background-color:transparent;&quot;&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000;&quot;&gt;1. Выбираем &lt;/span&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; font-weight:700; color:#000000;&quot;&gt;«Создать канал»&lt;/span&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%; background-color:transparent;&quot;&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000;&quot;&gt;2. В открывшемся диалоговом окне нужно ввести название и краткое описание&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%; background-color:transparent;&quot;&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000;&quot;&gt;3. Следующее диалоговое окно — выбор типа канала. Выбираете публичный, система предложит сформировать ссылку. Вводите варианты названия латиницей. Если ссылка не занята — возникнет соответствующая подсказка.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%; background-color:transparent;&quot;&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000;&quot;&gt;4. На следующем этапе система предложит добавить участников в новый канал из тех, что находятся в ваших контактах. Автору дано право «самовольно» подписать на него до 200 участников из собственных контактов. Можете выбрать отдельных, всех вместе или нажать &lt;/span&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; font-weight:700; color:#000000;&quot;&gt;«Пропустить»&lt;/span&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%; background-color:transparent;&quot;&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000;&quot;&gt;5. На этом все: канал создан, о чем и уведомит мессенджер. Теперь можно переходить к оформлению и настройкам.&lt;/span&gt;&lt;/p&gt;
+&lt;h2 style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:transparent;&quot;&gt;&lt;span style=&quot; font-family:'Liberation Serif','serif'; font-size:12pt; font-weight:700; color:#000000;&quot;&gt;Оформление канала Telegram&lt;/span&gt;&lt;/h2&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%; background-color:transparent;&quot;&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000;&quot;&gt;Прирост подписчиков, конверсия и другие показатели зависят не только от контента и методов продвижения. Внешний вид тоже имеет значение. Пользователь первоочередно видит картинку канала. Заинтересовавшись, человек переходит и читает описание, а также просматривает несколько сообщений.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%; background-color:transparent;&quot;&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000;&quot;&gt;Главные элементы оформления Телеграм канала — название, описание и аватар (лого, иконка). Начнем с описания. Оно должно быть:&lt;/span&gt;&lt;/p&gt;
+&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000; background-color:transparent;&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-size:medium;&quot;&gt;лаконичным; &lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000; background-color:transparent;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-size:medium;&quot;&gt;ясным; &lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000; background-color:transparent;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-size:medium;&quot;&gt;максимально раскрывающим суть.&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%; background-color:transparent;&quot;&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000;&quot;&gt;Предельное количество символов, как уже говорилось, — 255. Но лучше уложиться в 200, чтобы био легко можно было прочитать «беглым взглядом». В описании нужно рассказать, о чем канал и дать данные для обратной связи (например, название бота. ссылку на прайс-лист и контакты для заказа рекламы).&lt;/span&gt;&lt;/p&gt;
+&lt;ol style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000; background-color:transparent;&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-size:medium;&quot;&gt;Чтобы просмотреть описание, нажмите на меню (три точки справа вверху) и далее — &lt;/span&gt;&lt;span style=&quot; font-size:medium; font-weight:700;&quot;&gt;«Описание канала»&lt;/span&gt;&lt;span style=&quot; font-size:medium;&quot;&gt;.&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%; background-color:transparent;&quot;&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000;&quot;&gt;Название канала в Telegram нужно написать на языке целевой аудитории. Лучше уложиться в 1-3 слова и указать в названии тематику. Если планируете наращивать аудиторию, которая ищет каналы в поиске Телеграма, добавьте в название ключевые слова.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%; background-color:transparent;&quot;&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000;&quot;&gt;2. Написать или изменить название и описание можно, нажав меню (три точки) и далее &lt;/span&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; font-weight:700; color:#000000;&quot;&gt;«Управление каналом»&lt;/span&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%; background-color:transparent;&quot;&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000;&quot;&gt;Перейдите в &lt;/span&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; font-weight:700; color:#000000;&quot;&gt;«Настройки» — «Управление каналом» — «Администраторы» — «Добавить администратора»&lt;/span&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000;&quot;&gt;. В списке подписчиков выбирайте нашего созданного бота и оставить возможности администратора права на &lt;/span&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; font-weight:700; color:#000000;&quot;&gt;«публикацию сообщений»&lt;/span&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%; background-color:transparent;&quot;&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%; background-color:transparent;&quot;&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000;&quot;&gt;3) получение ид канала&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%; background-color:transparent;&quot;&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000;&quot;&gt;Получаем ид канала &lt;/span&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; font-weight:700; color:#000000;&quot;&gt;«Настройки» — «получить ид канала». &lt;/span&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000;&quot;&gt;Если возникла ошибка пробуем скопировать из описания канала его ссылку и заменить «t.me/» на «@»&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%; background-color:transparent;&quot;&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000;&quot;&gt;&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; font-weight:700; color:#000000;&quot;&gt;Внимание: НЕ позволяйте посторонним лицам получить доступ к вашему токену бота Telegram и НЕ загружайте его в интернет. Любой человек с вашим токеном может получить полный контроль над вашим Telegram-ботом, и вам, вероятно, придется создать нового бота, если это произойдет.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%; background-color:transparent;&quot;&gt;&lt;span style=&quot; font-family:'JetBrains Mono','monospace'; font-size:12pt; color:#000000;&quot;&gt;&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+ <designerdata>
+  <property name="gridDeltaX">
+   <number>10</number>
+  </property>
+  <property name="gridDeltaY">
+   <number>10</number>
+  </property>
+  <property name="gridSnapX">
+   <bool>true</bool>
+  </property>
+  <property name="gridSnapY">
+   <bool>true</bool>
+  </property>
+  <property name="gridVisible">
+   <bool>true</bool>
+  </property>
+ </designerdata>
+</ui>
